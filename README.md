@@ -3,4 +3,6 @@ butlr
 
 Command Line for the Web
 
-This is the public repostiory of the presently private project called butlr.
+The code for butlr is private, API references will be posted here.
+
+http://www.butlr.me
