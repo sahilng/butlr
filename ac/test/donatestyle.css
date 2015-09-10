@@ -1,0 +1,29 @@
+html{
+	height:100%;
+	width:100%;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	background-color: #efefef;
+}
+
+#error{
+	color:#ff0000;
+	font-family: 'Roboto-Thin';
+	font-size: 3em;
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: local(Roboto-Thin), url('../fonts/Roboto-Thin.ttf') format('opentype');
+}
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto-Regular), url('../fonts/Roboto-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: local(Roboto-Bold), url('../fonts/Roboto-Bold.ttf') format('opentype');
+}

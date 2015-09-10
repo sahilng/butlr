@@ -1,0 +1,8 @@
+"doc","document,convert-to-doc"
+"docx","document,convert-to-docx"
+"flash","document,convert-to-flash"
+"html","document,convert-to-html"
+"odt","document,convert-to-odt"
+"pdf","document,convert-to-pdf"
+"rtf","document,convert-to-rtf"
+"txt","document,convert-to-txt"

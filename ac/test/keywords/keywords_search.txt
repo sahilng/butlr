@@ -1,0 +1,5 @@
+"google","Location: https://www.google.com/#q="
+"youtube","yt","Location: http://www.youtube.com/results?search_query="
+"wolframalpha","wolfram","Location: http://www.wolframalpha.com/input/?i="
+"pandora","music","Location : http://www.pandora.com/search/"
+"wikipedia","wiki","Location : http://en.wikipedia.org/w/index.php?search="

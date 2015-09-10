@@ -1,0 +1,4 @@
+"7z","7zip","archive,convert-to-7z"
+"bz2","bzip","bzip2","tar.bz2","archive,convert-to-bz2"
+"gz","gzip","tar.gz","archive,convert-to-gz"
+"zip","archive,convert-to-zip"

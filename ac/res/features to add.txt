@@ -1,0 +1,6 @@
+butler features to add:
+	-Dwolla
+	-directions (GMAPS API)
+	-showtimes (fandango has an api)
+	-sports info (“lakers vs. knicks”) returns scores
+	-recipes

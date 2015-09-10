@@ -1,0 +1,8 @@
+"azw","azw3","ebook,convert-to-azw3"
+"epub","ebook,convert-to-epub"
+"fb2","ebook,convert-to-fb2"
+"lit","ebook,convert-to-lit"
+"lrf","ebook,convert-to-lrf"
+"mobi","ebook,convert-to-mobi"
+"pdb","ebook,convert-to-pdb"
+"tcr","ebook,convert-to-tcr"

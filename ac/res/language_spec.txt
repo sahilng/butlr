@@ -1,0 +1,91 @@
+============================
+Butlr Language Specification
+============================
+
+
+Specification notes:
+<foo> indicates a required element.
+[bar] indicates an optonal element.
+
+I. General command syntax
+-------------------------
+Commands are entered in the following format:
+
+	<command> [option1] [option2] [option3] ...
+
+
+A. Keyword File Format
+----------------------
+"keyword1","keyword2","keyword3","value"
+
+example from keywords_open.txt:
+"new york times","nytimes","nyt","Location: http://www.nytimes.com"
+
+Parse keyword files by including keywords.php and using parseKeywordFile($filepath).
+A file with the above line would return an array with:
+
+array(
+	"new york times" => "Location: http://www.nytimes.com",
+	"nytimes" => "Location: http://www.nytimes.com",
+	"nyt" => "Location: http://www.nytimes.com"
+	)
+
+online-convert.com api key: 67a614a530168df38b911f533e70e2d4
+
+
+B. Syntax Options
+----------------------
+
+-open
+   -facebook
+   -twitter
+   -google
+   -yahoo
+   -bing
+   -cnn
+   -bbc
+   -npr
+   -nyt
+   -wsj
+   -diagnoser, symptomchecker
+-search
+   -google
+	-“[search terms]”
+   -youtube
+	-“[search terms]”
+   -wolframalpha
+	-“[query terms]”
+   -pandora, music
+   	-"[query terms]"
+   -weather
+       -for
+	   -“[location]"
+   -directions
+   	   -from
+   	       -"[from loc]"
+   	           -to
+   	             -"[to loc]"
+   -delivery
+	   -to
+		-“[street address]”
+			-“[city]”
+			    -“[zip code]
+   -definition
+	   -for
+		-[query]
+-translate
+   -from
+      -[iso 3-letter language code]
+	   -to
+	      -[iso 3-letter]
+		  -“[query terms]”
+-convert
+   -this (must upload attachment)
+      -to
+         -[file format]
+-calculate
+   -“[simple arithmetic query]”
+ 
+
+
+

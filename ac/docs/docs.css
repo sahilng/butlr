@@ -1,0 +1,56 @@
+#docs{
+
+	text-align: center;
+	position: relative;
+	bottom:7px;
+	font-size: .5em;	
+	
+}
+
+#help{
+	display="block";
+}
+
+.toggleBtn{
+	
+	display: block;
+	border: none;	
+	background-color: transparent;
+	width:100%;
+	text-align: left;
+	color:#00b3ff;
+	font-family: "Roboto-Thin";
+	font-size: 1.3em;
+	
+}
+
+table{
+
+	width: 100%;
+}
+
+
+
+
+.helpField{
+
+	display: block;
+	background: white;
+	background: transparent;
+	border: transparent;
+	width: 100%;
+	font-size: 1.8em;
+	font-family: "Roboto-Thin";
+	color:#23e64a;
+	outline-width: 0;
+
+	
+}
+
+
+.helpField a{
+	text-decoration: none;
+	font-family: "Roboto";
+	color:#23e64a;
+}
+

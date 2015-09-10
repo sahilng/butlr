@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8" author="Sahil, Cavan, Stan" />
+<title>butlr DOCS</title>
+<meta name="description" content="The butlr docs offer an easily understood description of keywords and their functions">
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="docs.css">
+
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+	type="text/javascript"></script>
+	
+<script type="text/javascript">
+	
+	
+	function toggle_display(startId, endId, linkId, name, prefix){
+		
+		var i = startId;
+		
+		while(i<endId+1){
+			var e = document.getElementById(i);
+			if(e.style.display == 'block'){
+	          e.style.display = 'none';
+	          document.getElementById(linkId).innerHTML = prefix + name;
+	          }
+			else{
+	          e.style.display = 'block';
+	          document.getElementById(linkId).innerHTML = prefix + "Hide " + name;
+	          }
+	        
+			i++;
+		}
+	
+	}
+	
+		
+</script>
+
+
+</head>
+
+<body onunload="">
+	<div id="tophalf">
+	
+	<a href="../"><span class="staticMenuLink" id="homeLink"><span class="menuLinkText">home</span></span></a>		
+	<a href="../docs"><span class="staticMenuLink current" id="docsLink"><span class="menuLinkText">docs</span></span></a>
+	<a href="https://www.facebook.com/pages/Butlr/668778913166047?ref=hl"><span class="hoverMenuLink" id="fbLink"><span class="menuLinkText">facebook</span></span></a>
+	<a href="http://www.twitter.com/butlr_dev"><span class="hoverMenuLink" id="twitterLink"><span class="menuLinkText">twitter</span></span></a>
+
+	<div id="logo">
+    <p><a href="../">butlr</a> <span id=docs>DOCS</span></p>
+   </div>
+	</div>
+	<div id="bottomhalf">
+
+	<div id="commandbox"  class="shadow">
+		<table id="tableId">
+			<tbody>
+			
+				<tr><td class=helpField><a id="showhelp" class="toggleBtn" onclick="toggle_display(1,6,'showhelp','Help','')" href="javascript:void(0)">Help</a></td></tr>
+				<div id=help>
+					<tr><td id="1" class=helpField style="display:none">&nbsp;&nbsp;&nbsp;Butlr is a command-line for the web.</td></tr>
+					<tr><td id=2 class=helpField style="display:none">&nbsp;&nbsp;&nbsp;Like any command-line, butlr has specific syntax.</td></tr>
+					<tr><td id=3 class=helpField style="display:none">&nbsp;&nbsp;&nbsp;For a list of available commands, type 'help' from butlr.</td></tr>
+					<tr><td id=4 class=helpField style="display:none">&nbsp;&nbsp;&nbsp;Most commands have parameters, additional information you need to supply.</td></tr>
+					<tr><td id=5 class=helpField style="display:none">&nbsp;&nbsp;&nbsp;For an explanation of a command's specific syntax type 'help [command name]'.</td></tr>
+					<tr><td id=6 class=helpField style="display:none">&nbsp;&nbsp;&nbsp;For any further questions/feedback, email <a href="mailto:contact@butlr.me">contact@butlr.me</a>.</td></tr>
+				</div>
+				
+				<tr><td class=helpField><a id="showdocs" class="toggleBtn" onclick="toggle_display(7,9,'showdocs','Docs','')" href="javascript:void(0)">Docs</a></td></tr>
+
+				<div id=docs>						
+						<tr><td id=7 style="display:none;" class=helpField><a id="showopen" class="toggleBtn" onclick="toggle_display(71,73,'showopen','Open','&nbsp;&nbsp;&nbsp;')" href="javascript:void(0)">&nbsp;&nbsp;&nbsp;Open</a></td></tr>
+							<tr><td id=71 style="display:none;" class="helpField"><a style="color:#ff8b31;" id="showopenkeywords" class="toggleBtn" onclick="toggle_display(711,712,'showopenkeywords','Keywords','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')" href="javascript:void(0)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keywords</a></td></tr>
+							<tr><td id=711 class=helpField style="display:none;color:#ff8b31;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;google</td></tr>
+							<tr><td id=712 class=helpField style="display:none;color:#ff8b31;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;youtube</td></tr>
+							
+							<tr><td id=72 class=helpField style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Any valid Keyword]</td></tr>
+							<tr><td id=73 class=helpField style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Any valid URL]</td></tr>
+						
+						
+					</td></tr>
+					
+					<tr><td id=8 style="display:none;" class=helpField><a id="showsearch" class="toggleBtn" onclick="toggle_display(81,82,'showsearch','Search','&nbsp;&nbsp;&nbsp;')" href="javascript:void(0)">&nbsp;&nbsp;&nbsp;Search</a></td></tr>
+							<tr><td id=81 style="display:none;" class=helpField><a id="showsearchkeywords" class="toggleBtn" onclick="toggle_display(811,812,'showsearchkeywords','Keywords','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')" href="javascript:void(0)" style="color:#ff8b31;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keywords</a></td></tr>
+								<tr><td id=811 class=helpField style="display:none;color:#ff8b31;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;google</td></tr>
+								<tr><td id=812 class=helpField style="display:none;color:#ff8b31;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;youtube</td></tr>
+								
+								<tr><td id=82 style="display:none;" class=helpField><a id="showsearchquery" class="toggleBtn" onclick="toggle_display(821,821,'showsearchquery','[Any valid Keyword]','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')" href="javascript:void(0)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Any valid Keyword]</a></td></tr>
+																	<tr><td id=821 class=helpField style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"[query]"</td></tr>
+
+						
+					</td></tr>
+					
+					<tr><td id=9 class=helpField style="color:#24a1ff;display:none;">&nbsp;&nbsp;&nbsp;&nbsp;DOCS for more commands coming soon, for now use help [command]</td></tr>
+
+					
+				</div>
+				
+				
+				
+			</tbody>
+		</table>
+	</div>
+	</div>
+
+</body>
+</html>
+
+
